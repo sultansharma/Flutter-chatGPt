@@ -7,9 +7,7 @@ import 'package:flutter_chatgpt/models/images.dart';
 
 class MainProvider with ChangeNotifier {
   MainProvider() {
-    makeTextAndCodeSeprate(
-        "Sure! Here's the updated code with the `fontSize` set to 30.0:\n\n```dart\nimport 'package:flutter/material.dart';\n\nvoid main() => runApp(MyApp());\n\nclass MyApp extends StatelessWidget {\n  @override\n  Widget build(BuildContext context) {\n    return MaterialApp(\n      title: 'Flutter Container Example here is that on the',\n      theme: ThemeData(\n        primarySwatch: Colors.blue,\n      ),\n      home: Scaffold(\n        appBar: AppBar(\n          title: Text('Flutter Container Example'),\n        ),\n        body: Center(\n          child: Container(\n            width: 200.0,\n            height: 200.0,\n            color: Colors.green,\n            child: Text(\n              'Hello, Flutter!',\n              style: TextStyle(\n                fontSize: 30.0,\n                color: Colors.white,\n              ),\n            ),\n          ),\n        ),\n      ),\n    );\n  }\n}\n```\n\nNow the `Text` widget inside the `Container` has a font size of 30.0.");
-  }
+    }
 
   //Generate Image
   List<Map<String, dynamic>> imagesChat = [];
