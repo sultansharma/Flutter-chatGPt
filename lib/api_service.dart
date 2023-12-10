@@ -11,7 +11,7 @@ Future<dynamic> postRequest(String url, dynamic body) async {
     var headers = {
       'Accept': 'application/json',
       'Authorization':
-          'Bearer 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',
+          'Bearer ${openApiKey}',
       'Content-Type': 'application/json'
     };
     var request = http.Request('POST', Uri.parse(mainUrl + url));
